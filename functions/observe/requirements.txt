@@ -1,0 +1,36 @@
+# OBSERVE Pillar Requirements
+# Python dependencies for GCP AI-Native Self-Healing DevOps telemetry collection
+
+# Core GCP libraries
+google-cloud-logging==3.5.0
+google-cloud-monitoring==2.14.0
+google-cloud-trace==1.8.0
+google-cloud-bigquery==3.11.0
+google-cloud-pubsub==2.15.0
+google-cloud-functions==1.13.0
+
+# Web framework for Cloud Functions
+functions-framework==3.4.0
+
+# Data processing
+pandas==1.5.3
+numpy==1.24.2
+
+# JSON handling
+jsonschema==4.17.3
+
+# Logging and monitoring
+structlog==23.1.0
+
+# Testing (optional, for local development)
+pytest==7.2.2
+pytest-asyncio==0.21.0
+
+# Development tools
+black==23.3.0
+flake8==6.0.0
+mypy==1.3.0
+
+# Optional: For local development and testing
+google-cloud-storage==2.7.0
+requests==2.28.2
