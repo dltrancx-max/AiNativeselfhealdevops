@@ -269,6 +269,10 @@ Incident Processor :
 
 - **Response API**: The Response API exposes a secure, RESTful interface for external systems and users to query incident status, retrieve historical data, and trigger manual workflows. It supports integration with custom dashboards, automation tools, and third-party platforms, enabling both programmatic and human-in-the-loop operations.
 
+### **How OBSERVE Pillar Links with ANALYZE Pillar**
+
+The OBSERVE pillar acts as the sensory system of the platform, continuously collecting, correlating, and enriching telemetry data from GCP services. Once incidents are detected and enriched, they are forwarded to the ANALYZE pillar via Eventarc. This seamless handoff ensures that the ANALYZE pillar receives high-quality, context-rich incident data for advanced root cause analysis using Vertex AI Gemini, knowledge base search, and causal inference engines. The tight integration between these pillars enables rapid, accurate, and automated incident diagnosis, forming the backbone of the self-healing OODA loop.
+
 ### **AI Enhancement Layers**
 
 Each pillar is enhanced with cutting-edge AI capabilities:
